@@ -1,7 +1,3 @@
----
-title-heading: false
----
-
 # EE241B Project
 This is the website for Felicia Guo and Jingyi Xu's EE241B project
 
