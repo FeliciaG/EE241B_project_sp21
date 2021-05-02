@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/30/2018 21:08 (sjfnl050) $
 \o Sub version:		sub-version  s231 
-\o Arguments:		-mpssession virtuoso27738 -mpshost eda-3.EECS.Berkeley.EDU 
+\o Arguments:		-mpssession virtuoso22085 -mpshost eda-3.EECS.Berkeley.EDU 
 \o Working Directory:	eda-3.EECS.Berkeley.EDU:/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -38,26 +38,6 @@
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(0 24 798 519))
 \a nrResizeWindow(cdsLibManager list(977 77 809 602))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "project"
-\a cdsLibManager->libLineEdit->value = "project"
-\a cdsLibManager->cellListBox->value = "strongARM_tb"
-\a cdsLibManager->cellLineEdit->value = "strongARM_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a _lmgrCloseIconify("cdsLibManager" 1)
-\o MPS service: shutdown
-\o libManager is exiting.
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a exit(0)
