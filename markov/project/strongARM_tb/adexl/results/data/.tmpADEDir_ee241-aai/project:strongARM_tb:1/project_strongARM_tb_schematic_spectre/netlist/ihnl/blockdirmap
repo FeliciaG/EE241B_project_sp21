@@ -1,0 +1,4 @@
+CADENCE IHNL11142
+
+project strongARM_alib schematic cds0
+project strongARM_tb schematic cds1

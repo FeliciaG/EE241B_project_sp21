@@ -1,0 +1,13 @@
+    M10 (net23 CLK VDD VDD) pmos_rvt w=27n l=20n
+    M9 (outp CLK VDD VDD) pmos_rvt w=27n l=20n
+    M8 (net19 CLK VDD VDD) pmos_rvt w=27n l=20n
+    M7 (outn CLK VDD VDD) pmos_rvt w=27n l=20n
+    M6 (outp outn VDD VDD) pmos_rvt w=27n l=20n
+    M5 (outn outp VDD VDD) pmos_rvt w=27n l=20n
+    M4 (outn outp net19 GND) nmos_rvt w=81n l=20n
+    M3 (outp outn net23 GND) nmos_rvt w=81n l=20n
+    M2 (net18 CLK GND GND) nmos_rvt w=162n l=20n
+    M1 (net19 Vin2 net18 GND) nmos_rvt w=81n l=20n
+    M0 (net23 Vin1 net18 GND) nmos_rvt w=81n l=20n
+ends strongARM_alib
+// End of subcircuit definition.

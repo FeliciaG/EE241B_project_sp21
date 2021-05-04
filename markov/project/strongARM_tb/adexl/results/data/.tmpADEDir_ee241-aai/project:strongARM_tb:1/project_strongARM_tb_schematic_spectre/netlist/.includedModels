@@ -1,0 +1,3 @@
+simulator lang=spectre
+include "nmos_rvt.scs"
+include "pmos_rvt.scs"
