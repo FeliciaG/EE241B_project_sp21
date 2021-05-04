@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: May  2 12:17:19 2021
+// Design library name: project
+// Design cell name: strongARM_tb
+// Design view name: schematic
+simulator lang=spectre
+global 0

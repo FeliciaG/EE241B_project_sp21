@@ -1,0 +1,5 @@
+
+// Library name: project
+// Cell name: strongARM_alib
+// View name: schematic
+subckt strongARM_alib CLK GND VDD Vin1 Vin2 outn outp
