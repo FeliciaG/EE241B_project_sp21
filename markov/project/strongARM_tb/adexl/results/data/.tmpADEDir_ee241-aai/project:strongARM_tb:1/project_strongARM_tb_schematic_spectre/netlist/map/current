@@ -6,7 +6,7 @@
   stopList "spectre"
   globalList "gnd!"
   hierDelim "."
-  netlistDir "/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.8/1/project:strongARM_tb:1/netlist"
+  netlistDir "/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9/1/project:strongARM_tb:1/netlist"
  )
 ( net
 ( "gnd!" "0" )
