@@ -1,24 +1,28 @@
 `timescale 1ns/1ps
 
-module mc_tester();
+module trng_tester();
     reg clk;
     reg reset;
     reg [5:0] valid;
     reg [5:0] bits;
 
     wire out_valid;
-    wire [15:0] out;
+    wire out;
     initial clk = 0;
     initial reset =0;
     always #(10) clk <= ~clk;
-    wire [5:0] writing;
 
-    fifo16 dut (.clk(clk), .reset(reset), .valid(valid),
-    .bits(bits), .out_valid(out_valid), .out_16(out), .writing(writing)
-    );
+
+    trng dut(
+		.clk(clk),
+		.reset(reset),
+		.latch_bit,
+		.out_valid(out_valid)
+		.out(out)
+	);
 
     initial begin
-        $dumpfile("fifo_test.vcd");
+        $dumpfile("trng_test.vcd");
         $dumpvars(0, dut);
         $display("start sim");
         @(posedge clk);

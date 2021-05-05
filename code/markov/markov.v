@@ -2,10 +2,63 @@
 module trng (
     input clk,
     input reset,
-
+	input latch_bit,
+	
+	output out_valid,
     output out
 );
+
+	wire [3:0] lane;
+	markov16 router(
+		.clk(clk),
+		.reset(reset),
+		.bit_in(latch_bit),
+		.lane(lane),
+		.bit_out()
+	);
+
+	wire [5:0] ivn_out;
+	wire [5:0] ivn_valid;
+	ivn_top ivn (
+		.clk(clk),
+		.reset(reset),
+		.lane(lane),
+		.s(latch_bit),  // gets the same bit as the markov router
+		.s_valid(1'b1),
+		.s_vn(ivn_out),
+		.s_vn_valid(ivn_valid)
+	);
+
+	wire buffer_valid;
+	wire [16:0] buffer_out;
+	fifo16 buffer(
+		.clk(clk),
+		.reset(reset),
+		.valid(ivn_valid),
+		.bits(ivn_out),
+		
+		.out_valid(buffer_valid),
+		.out_16(out_16),
+	);
+
+	lfsr16 lfsr(
+		.clk(clk),
+		.reset(reset || buffer_valid),
+		.in_bits(buffer_out),
+		.out_bit(out)  
+	);
+	
+	reg trng_valid;
+	always @(posedge clk) begin
+		trng_valid <= buffer_valid;
+	end
+	assign out_valid = trng_valid;
+
 endmodule
+
+///////////////////////////////////////////////////////////////////////
+/////       SUB-BLOCKS
+///////////////////////////////////////////////////////////////////////
 
 module markov16(
     input clk,
@@ -42,8 +95,7 @@ module fifo16(
 	input [5:0] bits,
 	
 	output out_valid,
-	output [15:0] out_16,
-	output [5:0] writing
+	output [15:0] out_16
 );
 	reg [20:0] register;
 	reg [4:0] counter;
@@ -57,7 +109,7 @@ module fifo16(
 	reg [5:0] valid_bits;
 	reg [5:0] write_bits;
 	integer idx;
-	always @* begin
+	always @(*) begin
 		num_valid= {2{1'b0}};
 		valid_bits = {5{1'b0}};
 		for( idx = 0; idx<6; idx=idx+1) begin
