@@ -1080,5 +1080,124 @@
 			</schematicpoint>
 			<test>all</test>
 		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project:strongARM_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongARM_tb</value>
+							</option>
+							<option>lib
+								<value>project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project:strongARM_tb:1_spectre_state1_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongARM_tb</value>
+							</option>
+							<option>lib
+								<value>project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>vdd
+						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vg
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 4 11:35:06 2021</timestamp>
+			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>Quick Plot Data Only</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_113506184</localpsfdir>
+			<psfdir>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9</psfdir>
+			<simdir>./../markov/project/strongARM_tb/adexl/results/data/Interactive.9</simdir>
+			<resultspsfisuserpath>1</resultspsfisuserpath>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vdd
+						<value>0.7</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
 	</history>
 </setupdb>

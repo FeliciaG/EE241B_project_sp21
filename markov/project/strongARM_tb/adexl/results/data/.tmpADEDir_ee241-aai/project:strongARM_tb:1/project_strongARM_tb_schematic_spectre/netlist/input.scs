@@ -42,7 +42,7 @@ dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
 dcOpInfo info what=oppoint where=rawfile
 dc dc param=vg start=0 stop=0.7 oppoint=rawfile maxiters=150 \
     maxsteps=10000 annotate=status
-tran tran stop=10m errpreset=liberal noisefmax=6G noiseseed=1 \
+tran tran stop=100m errpreset=liberal noisefmax=3G noiseseed=1 \
     write="spectre.ic" writefinal="spectre.fc" annotate=status maxiters=5 
 finalTimeOP info what=oppoint where=rawfile
 modelParameter info what=models where=rawfile
@@ -51,5 +51,5 @@ outputParameter info what=output where=rawfile
 designParamVals info what=parameters where=rawfile
 primitives info what=primitives where=rawfile
 subckts info what=subckts where=rawfile
-save outn outp CLK Vin1 Vin2 V0:p 
+save outn outp V0:p 
 saveOptions options save=allpub

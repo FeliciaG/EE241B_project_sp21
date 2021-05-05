@@ -11,12 +11,12 @@ module mc_tester();
     initial reset =0;
     always #(10) clk <= ~clk;
 
-    markov16 dut (.clk(clk), .reset(reset), .in(in),
-    .lane(lane), .out(out)
+    markov16 dut (.clk(clk), .reset(reset), .bit_in(in),
+    .lane(lane), .bit_out(out)
     );
 
     initial begin
-        $dumpfile("mc_test.vcd");
+        $dumpfile("mc_test.vpd");
         $dumpvars(0, dut);
         $display("start sim");
         @(posedge clk);
