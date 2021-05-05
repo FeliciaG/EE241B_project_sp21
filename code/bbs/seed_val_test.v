@@ -20,7 +20,7 @@ module seed_val_tester();
     .result_valid(res_valid), .seed_valid(seed_valid));
 
     initial begin
-        $dumpfile("seed_val.gcd");
+        $dumpfile("seed_val.vcd");
         $dumpvars(0, dut);
         // $dumpvars(1, gcd);
         $display("start sim");
