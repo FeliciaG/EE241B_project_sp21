@@ -1,1 +1,10 @@
-0.609311
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan

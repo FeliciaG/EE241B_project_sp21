@@ -3,11 +3,11 @@ import csv
 clk_period = 4e-6;
 delay = 2100e-9;
 
-fileo = open(r"out_10ms700mv.txt", "w+")
+fileo = open(r"out_10ms770mv.txt", "w+")
 time = delay
 row_write = 0
 linewrite = 0
-with open('outputs/out_10ms700mv.csv') as csv_file:
+with open('outputs/out_10ms770mv.csv') as csv_file:
 	csv_reader = csv.reader(csv_file, delimiter=',')
 	
 	line_count = 0

@@ -1,6 +1,15 @@
 ________________________________________________________________________________
 
-		FILE = data/outputs_10ms700.txt		ALPHA = 0.0100
+		FILE = /scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov/out_10ms700mv.txt		ALPHA = 0.0100
 ________________________________________________________________________________
 
-		BITSREAD = 2000 0s = 1023 1s = 977
+		BITSREAD = 100 0s = 49 1s = 51
+		BITSREAD = 100 0s = 52 1s = 48
+		BITSREAD = 100 0s = 51 1s = 49
+		BITSREAD = 100 0s = 49 1s = 51
+		BITSREAD = 100 0s = 56 1s = 44
+		BITSREAD = 100 0s = 55 1s = 45
+		BITSREAD = 100 0s = 53 1s = 47
+		BITSREAD = 100 0s = 48 1s = 52
+		BITSREAD = 100 0s = 56 1s = 44
+		BITSREAD = 100 0s = 54 1s = 46

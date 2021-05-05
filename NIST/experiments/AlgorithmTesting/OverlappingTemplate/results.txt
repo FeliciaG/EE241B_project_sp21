@@ -1,1 +1,10 @@
-0.488416
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan
+-nan

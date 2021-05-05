@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      ee241-aai
 HostName                       eda-3.EECS.Berkeley.EDU
-ProcessIdentifier              22085
-ProcessCreationTime_UTC        1619933973
-ProcessCreationTime_Readable   Sat May  1 22:39:33 2021 PDT
+ProcessIdentifier              9275
+ProcessCreationTime_UTC        1620200610
+ProcessCreationTime_Readable   Wed May  5 00:43:30 2021 PDT
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/schematic/sch.oa.cdslck
-TimeEditLocked                 Sat May  1 22:39:44 2021 PDT
+FilePathUsedToEditLock         /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/schematic/sch.oa.cdslck.dirlck
+TimeEditLocked                 Wed May  5 01:25:40 2021 PDT

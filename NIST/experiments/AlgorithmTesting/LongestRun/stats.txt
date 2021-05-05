@@ -1,13 +1,30 @@
 			  LONGEST RUNS OF ONES TEST
 		---------------------------------------------
-		COMPUTATIONAL INFORMATION:
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
 		---------------------------------------------
-		(a) N (# of substrings)  = 250
-		(b) M (Substring Length) = 8
-		(c) Chi^2                = 2.722484
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
 		---------------------------------------------
-		      F R E Q U E N C Y
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
 		---------------------------------------------
-		  <=1     2     3    >=4   P-value  Assignment
-		  51 104  54   41 SUCCESS		p_value = 0.436420
-
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
+		---------------------------------------------
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
+		---------------------------------------------
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
+		---------------------------------------------
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
+		---------------------------------------------
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
+		---------------------------------------------
+		   n=100 is too short
+			  LONGEST RUNS OF ONES TEST
+		---------------------------------------------
+		   n=100 is too short

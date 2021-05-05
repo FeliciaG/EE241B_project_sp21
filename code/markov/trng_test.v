@@ -29,7 +29,6 @@ module trng_tester();
     initial begin
         $dumpfile("trng_test1.vcd");
         $dumpvars(0, dut);
-        $display("start sim");
         
 		data_file = $fopen("out_10ms700mv.txt", "r");
 		if (data_file == `NULL) begin
@@ -42,9 +41,9 @@ module trng_tester();
 		reset = 0;
 		fork
 			begin
-				repeat (1000) @(posedge clk);
+				repeat (100000) @(posedge clk);
 				if (!done) begin
-					$display("Failure: Timing out after 1000 cycles");
+					$display("Failure: Timing out after 100000 cycles");
 					$finish();
 				end
 			end

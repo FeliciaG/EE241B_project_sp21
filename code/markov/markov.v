@@ -28,7 +28,19 @@ module trng (
 		.s_vn(ivn_out),
 		.s_vn_valid(ivn_valid)
 	);
+	
 
+	fifo buffer(
+		.clk(clk),
+		.reset(reset),
+		.valid(ivn_valid),
+		.bits(ivn_out),
+		
+		.out_valid(out_valid),
+		.out(out)
+	);
+	
+	/*
 	wire buffer_valid;
 	wire [15:0] buffer_out;
 	fifo16 buffer(
@@ -40,21 +52,21 @@ module trng (
 		.out_valid(buffer_valid),
 		.out_16(buffer_out)
 	);
-
+	
 	lfsr16 lfsr(
 		.clk(clk),
 		.reset(reset || buffer_valid),
 		.in_bits(buffer_out),
 		.out_bit(out)  
 	);
-	
+
 	reg flag;
 	always @(posedge clk) begin
 		if (reset) flag <= 0;
-		flag <= buffer_valid ? 1 : flag;
+		else flag <= buffer_valid ? 1 : flag;
 	end
 	assign out_valid = flag;
-
+	*/
 endmodule
 
 ///////////////////////////////////////////////////////////////////////
@@ -149,7 +161,7 @@ module fifo16(
 				register[counter_wire + j] <= write_bits[j];
 			end
 			counter <= (|valid) ? (counter_wire + num_valid) : counter;
-			out_valid_reg <= ((|valid) & (counter_wire + num_valid) > 15) ? 1 : 0;
+			out_valid_reg <= ((|valid) & (counter_wire + num_valid) >= 15) ? 1 : 0;
 		end
 	end
 	assign counter_wire = reset? 0 :counter;
@@ -176,4 +188,85 @@ module lfsr16(
             register <= {register[14:0], xor_bit };
         end
     end
+endmodule
+
+// Trying to just output bits: 
+module fifo(
+	input clk,
+	input reset,
+	input [5:0] valid,
+	input [5:0] bits,
+	
+	output out_valid,
+	output out
+);
+	reg [20:0] register;
+	reg [4:0] counter;
+	wire [4:0] counter_wire;
+	wire [4:0] counter_up;
+	reg out_valid_reg;
+	
+	//count number of valid bits	
+	reg [2:0] num_valid;
+	reg [2:0] num_valid_n;
+	reg [5:0] valid_bits;
+	reg [11:0] write_bits;
+	integer idx;
+	always @(*) begin
+		num_valid= {2{1'b0}};
+		valid_bits = {5{1'b0}};
+		for( idx = 0; idx<6; idx=idx+1) begin
+			num_valid = num_valid + valid[idx];
+			valid_bits[num_valid-1] = valid[idx] ?  bits[idx] : valid_bits[num_valid-1];
+		end
+		num_valid_n = 6-num_valid;
+		write_bits = {{6{1'b0}}, valid_bits}; 
+	end
+	assign  writing = write_bits;
+	
+	integer i;
+	integer j;
+	reg out_16_reg;
+	always @(posedge clk) begin
+		if (reset == 1) begin
+			counter<=0;
+			register <= 21'b0;
+			out_valid_reg <= 0;
+		end
+		/*else if (counter_wire >= 15) begin
+			counter <= (|valid) ? (counter_wire + num_valid -15): (counter_wire - 15);
+			for (i=15; i<20; i=i+1) begin
+				register[i-15] <= register[i+1];
+			end
+			for (j=0; j<num_valid; j=j+1) begin
+				register[counter_wire - 15 + j] <= write_bits[j];
+			end
+			for (j = counter_wire + num_valid -15; j<21; j=j+1) begin
+				register[j] <= 0;
+			end
+			out_valid_reg <= 0;
+		end	
+		*/	
+		else begin 
+			for (j=0; j<counter_wire; j=j+1) begin
+				register[j] <= register[j+1];
+			end
+			if (num_valid == 0) register[counter_wire-1] <= 0;
+			else begin
+				for (j=0; j<num_valid; j=j+1) begin
+					if ((counter_wire + j)  < 21)
+						register[counter_wire + j] <= write_bits[j];
+				end
+			end
+			
+			counter <= (|valid) ? ((counter_wire + num_valid <21) ? (counter_wire + num_valid - 1) : 5'd20)
+								: ((counter_wire == 0) ? 0 : counter_wire-1);
+			out_valid_reg <= |(counter_wire + num_valid);
+		end
+	end
+	assign counter_wire = reset? 0 :counter;
+	assign counter_up = reset? 0 :counter+5;
+	assign out = register[0];
+	assign out_valid = reset ? 0 :out_valid_reg;
+
 endmodule
