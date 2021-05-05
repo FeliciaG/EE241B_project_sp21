@@ -30,7 +30,7 @@ module trng (
 	);
 
 	wire buffer_valid;
-	wire [16:0] buffer_out;
+	wire [15:0] buffer_out;
 	fifo16 buffer(
 		.clk(clk),
 		.reset(reset),
@@ -38,7 +38,7 @@ module trng (
 		.bits(ivn_out),
 		
 		.out_valid(buffer_valid),
-		.out_16(out_16),
+		.out_16(buffer_out)
 	);
 
 	lfsr16 lfsr(
@@ -48,11 +48,12 @@ module trng (
 		.out_bit(out)  
 	);
 	
-	reg trng_valid;
+	reg flag;
 	always @(posedge clk) begin
-		trng_valid <= buffer_valid;
+		if (reset) flag <= 0;
+		flag <= buffer_valid ? 1 : flag;
 	end
-	assign out_valid = trng_valid;
+	assign out_valid = flag;
 
 endmodule
 
@@ -107,7 +108,7 @@ module fifo16(
 	reg [2:0] num_valid;
 	reg [2:0] num_valid_n;
 	reg [5:0] valid_bits;
-	reg [5:0] write_bits;
+	reg [11:0] write_bits;
 	integer idx;
 	always @(*) begin
 		num_valid= {2{1'b0}};
@@ -117,7 +118,7 @@ module fifo16(
 			valid_bits[num_valid-1] = valid[idx] ?  bits[idx] : valid_bits[num_valid-1];
 		end
 		num_valid_n = 6-num_valid;
-		write_bits = {{num_valid_n{1'b0}}, valid_bits}; 
+		write_bits = {{6{1'b0}}, valid_bits}; 
 	end
 	assign  writing = write_bits;
 	
@@ -172,7 +173,7 @@ module lfsr16(
         if (reset) begin
             register <= in_bits;
         end else begin
-            register <= {register[15:1], xor_bit };
+            register <= {register[14:0], xor_bit };
         end
     end
 endmodule

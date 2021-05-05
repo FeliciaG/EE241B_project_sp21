@@ -1,4 +1,5 @@
 `timescale 1ns/1ps
+`define NULL 0
 
 module trng_tester();
     reg clk;
@@ -11,70 +12,58 @@ module trng_tester();
     initial clk = 0;
     initial reset =0;
     always #(10) clk <= ~clk;
-
-
+	
+	reg latch_bit;
     trng dut(
 		.clk(clk),
 		.reset(reset),
-		.latch_bit,
-		.out_valid(out_valid)
+		.latch_bit(latch_bit),
+		.out_valid(out_valid),
 		.out(out)
 	);
-
+	
+	
+	wire done = 0;
+	integer data_file;
+	integer scan_file;
     initial begin
-        $dumpfile("trng_test.vcd");
+        $dumpfile("trng_test1.vcd");
         $dumpvars(0, dut);
         $display("start sim");
-        @(posedge clk);
-        reset = 1;
-		#1;
-        @(posedge clk) begin
-			reset = 0;
-            bits = 6'b0;
-            valid = 6'b0;
-        end
-        #1;
-        $display("in: %b, out_valid: %b, out: %b", bits, out_valid, out);
-
-        @(posedge clk) begin
-            bits =  6'b111111;
-            valid = 6'b011111;
-        end
-        #1;
-        $display("in: %b, out_valid: %b, out: %b, writing: %b", bits, out_valid, out, writing);
-
-        @(posedge clk) begin
-            bits =  6'b010001;
-            valid = 6'b100111;
-        end
-        #1;
-        $display("in: %b, out_valid: %b, out: %b", bits, out_valid, out);
-
-        @(posedge clk) begin
-            bits =  6'b010101;
-            valid = 6'b110111;
-        end
-        #1;
-        $display("in: %b, out_valid: %b, out: %b", bits, out_valid, out);
-		
-		@(posedge clk) begin
-            bits =  6'b110101;
-            valid = 6'b110111;
-        end
-        #1;
-        $display("in: %b, out_valid: %b, out: %b", bits, out_valid, out);
         
-        @(posedge clk) begin
-            bits =  6'b110101;
-            valid = 6'b100110;
+		data_file = $fopen("out_10ms700mv.txt", "r");
+		if (data_file == `NULL) begin
+			$display("data_file handle was NULL");
+			$finish;
+		end
+		@(posedge clk);
+		reset = 1;
+		@(posedge clk);
+		reset = 0;
+		fork
+			begin
+				repeat (1000) @(posedge clk);
+				if (!done) begin
+					$display("Failure: Timing out after 1000 cycles");
+					$finish();
+				end
+			end
+		join
+		
+		$finish;
+	end
+    
+    
+	reg [31:0]counter;
+    always @(posedge clk) begin
+        counter <= counter + 1;
+        scan_file = $fscanf(data_file, "%d\n", latch_bit);
+        if (out_valid) begin
+            $display("%b", out);
+            // $display("%d", test_out);
+            // $display("step: %d, out_valid: %d, out: %d, 1out_bit: %d ", counter, out_valid, test_out, out_bit);
         end
-        #1;
-        $display("in: %b, out_valid: %b, out: %b", bits, out_valid, out);
-        #20;
-        $display("in: %b, out_valid: %b, out: %b", bits, out_valid, out);
-        #20;
-        $display("in: %b, out_valid: %b, out: %b", bits, out_valid, out);
-        #20 $finish();
     end
-
+       
+   
 endmodule
