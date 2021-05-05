@@ -41,9 +41,9 @@ module trng_tester();
 		reset = 0;
 		fork
 			begin
-				repeat (100000) @(posedge clk);
+				repeat (2500) @(posedge clk);
 				if (!done) begin
-					$display("Failure: Timing out after 100000 cycles");
+					$display("Failure: Timing out after 10000 cycles");
 					$finish();
 				end
 			end
@@ -57,6 +57,7 @@ module trng_tester();
     always @(posedge clk) begin
         counter <= counter + 1;
         scan_file = $fscanf(data_file, "%d\n", latch_bit);
+        if (scan_file == 0) $finish;
         if (out_valid) begin
             $display("%b", out);
             // $display("%d", test_out);

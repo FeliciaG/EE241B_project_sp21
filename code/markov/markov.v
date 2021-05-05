@@ -41,6 +41,7 @@ module trng (
 	);
 	
 	/*
+	// with lfsr
 	wire buffer_valid;
 	wire [15:0] buffer_out;
 	fifo16 buffer(
