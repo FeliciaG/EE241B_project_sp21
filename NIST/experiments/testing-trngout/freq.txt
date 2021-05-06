@@ -1,0 +1,15 @@
+________________________________________________________________________________
+
+		FILE = /scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov/trng_out.txt		ALPHA = 0.0100
+________________________________________________________________________________
+
+		BITSREAD = 100 0s = 56 1s = 44
+		BITSREAD = 100 0s = 50 1s = 50
+		BITSREAD = 100 0s = 46 1s = 54
+		BITSREAD = 100 0s = 45 1s = 55
+		BITSREAD = 100 0s = 47 1s = 53
+		BITSREAD = 100 0s = 47 1s = 53
+		BITSREAD = 100 0s = 55 1s = 45
+		BITSREAD = 100 0s = 46 1s = 54
+		BITSREAD = 100 0s = 53 1s = 47
+		BITSREAD = 100 0s = 46 1s = 54

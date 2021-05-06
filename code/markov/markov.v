@@ -249,7 +249,7 @@ module fifo(
 		end	
 		*/	
 		else begin 
-			for (j=0; j<counter_wire; j=j+1) begin
+			for (j=0; j<counter_wire-1; j=j+1) begin
 				register[j] <= register[j+1];
 			end
 			if (num_valid == 0) register[counter_wire-1] <= 0;

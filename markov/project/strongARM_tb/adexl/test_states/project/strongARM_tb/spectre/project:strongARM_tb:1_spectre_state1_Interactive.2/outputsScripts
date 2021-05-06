@@ -307,13 +307,13 @@ list(tmp1 tmp2)
 tmp36 = (let
 (tmp1 tmp2)
 tmp1 = 'pwr
-tmp2 = ""
+tmp2 = "all"
 list(tmp1 tmp2)
 )
 tmp37 = (let
 (tmp1 tmp2)
 tmp1 = 'save
-tmp2 = "allpub"
+tmp2 = "all"
 list(tmp1 tmp2)
 )
 tmp38 = (let

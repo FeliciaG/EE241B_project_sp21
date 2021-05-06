@@ -59,20 +59,26 @@
 			</test>
 		</tests>
 		<vars>
-			<var>vdd
-				<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
+			<var>fclk
+				<value>250k</value>
 				<dependentTests>
-					<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
+					<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vdd
+				<value>{Inclusion List}0.5{Inclusion List}{Inclusion List}0.9{Inclusion List}</value>
+				<dependentTests>
+					<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>vg
 				<value>0</value>
 				<dependentTests>
-					<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
+					<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
-		<overwritehistoryname>Interactive.11</overwritehistoryname>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
 		<plottingoptions>
 			<plottingoption>plottype
 				<value>None</value>
@@ -91,10 +97,254 @@
 			</plottingoption>
 		</plottingoptions>
 		<jobpolicyname>ADE XL Default</jobpolicyname>
-		<distributeoptions></distributeoptions>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl">Interactive.2
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project:strongARM_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongARM_tb</value>
+							</option>
+							<option>lib
+								<value>project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project:strongARM_tb:1_spectre_state1_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongARM_tb</value>
+							</option>
+							<option>lib
+								<value>project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>fclk
+						<value>250k</value>
+						<dependentTests>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>{Inclusion List}0.5{Inclusion List}{Inclusion List}0.9{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vg
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 5 15:19:55 2021</timestamp>
+			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_151955172</localpsfdir>
+			<psfdir>/home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project/strongARM_tb/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vdd
+						<value>0.7</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project:strongARM_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongARM_tb</value>
+							</option>
+							<option>lib
+								<value>project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project:strongARM_tb:1_spectre_state1_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongARM_tb</value>
+							</option>
+							<option>lib
+								<value>project</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>fclk
+						<value>250k</value>
+						<dependentTests>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>{Inclusion List}0.5{Inclusion List}{Inclusion List}0.9{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vg
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>May 5 15:21:26 2021</timestamp>
+			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_152126675</localpsfdir>
+			<psfdir>/home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project/strongARM_tb/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vdd
+						<value>0.7</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -154,16 +404,22 @@
 					</test>
 				</tests>
 				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
+					<var>fclk
+						<value>250k</value>
 						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>{Inclusion List}0.5{Inclusion List}{Inclusion List}0.9{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>vg
 						<value>0</value>
 						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -186,8 +442,9 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>May 2 12:12:19 2021</timestamp>
+			<timestamp>May 5 15:38:39 2021</timestamp>
 			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.2.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -195,9 +452,22 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_121219935</localpsfdir>
+			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_153839982</localpsfdir>
+			<psfdir>/home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project/strongARM_tb/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vdd
+						<value>0.7</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl">Interactive.3
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -257,16 +527,22 @@
 					</test>
 				</tests>
 				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
+					<var>fclk
+						<value>250k</value>
 						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>{Inclusion List}0.5{Inclusion List}{Inclusion List}0.9{Inclusion List}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>vg
 						<value>0</value>
 						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
+							<dependentTest omitted="0">project:strongARM_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -289,8 +565,9 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>May 2 12:12:31 2021</timestamp>
+			<timestamp>May 5 15:41:50 2021</timestamp>
 			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.3.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
@@ -298,902 +575,12 @@
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_121231577</localpsfdir>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl">Interactive.4
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>project:strongARM_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>project:strongARM_tb:1_spectre_state1_Interactive.4</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vg
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-			</checkpoint>
-			<timestamp>May 2 12:14:33 2021</timestamp>
-			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.4.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_121433146</localpsfdir>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl">Interactive.5
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>project:strongARM_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>project:strongARM_tb:1_spectre_state1_Interactive.5</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vg
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-			</checkpoint>
-			<timestamp>May 2 12:15:02 2021</timestamp>
-			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.5.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_121502164</localpsfdir>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl">Interactive.6
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>project:strongARM_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>project:strongARM_tb:1_spectre_state1_Interactive.6</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vg
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<distributeoptions></distributeoptions>
-			</checkpoint>
-			<timestamp>May 2 12:16:40 2021</timestamp>
-			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.6.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_121640061</localpsfdir>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>project:strongARM_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>project:strongARM_tb:1_spectre_state1_Interactive.7</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vg
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<distributeoptions></distributeoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>May 2 12:17:14 2021</timestamp>
-			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.7.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_121714679</localpsfdir>
-			<psfdir>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.7</psfdir>
-			<simdir>./../markov/project/strongARM_tb/adexl/results/data/Interactive.7</simdir>
-			<resultspsfisuserpath>1</resultspsfisuserpath>
+			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_154150689</localpsfdir>
+			<psfdir>/home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project/strongARM_tb/adexl/results/data/Interactive.3</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.7.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>vdd
-						<value>0.7</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>project:strongARM_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>project:strongARM_tb:1_spectre_state1_Interactive.8</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vg
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<distributeoptions></distributeoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>May 2 14:48:28 2021</timestamp>
-			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.8.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_144828120</localpsfdir>
-			<psfdir>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.8</psfdir>
-			<simdir>./../markov/project/strongARM_tb/adexl/results/data/Interactive.8</simdir>
-			<resultspsfisuserpath>1</resultspsfisuserpath>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.8.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>vdd
-						<value>0.7</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>project:strongARM_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>project:strongARM_tb:1_spectre_state1_Interactive.9</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vg
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<distributeoptions></distributeoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>May 4 11:35:06 2021</timestamp>
-			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>Quick Plot Data Only</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_113506184</localpsfdir>
-			<psfdir>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9</psfdir>
-			<simdir>./../markov/project/strongARM_tb/adexl/results/data/Interactive.9</simdir>
-			<resultspsfisuserpath>1</resultspsfisuserpath>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>vdd
-						<value>0.7</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.10
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>project:strongARM_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>project:strongARM_tb:1_spectre_state1_Interactive.10</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vg
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<distributeoptions></distributeoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>May 5 00:45:51 2021</timestamp>
-			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.10.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_004551165</localpsfdir>
-			<psfdir>/home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb/adexl/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/project/strongARM_tb/adexl/results/data/Interactive.10</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>vdd
-						<value>0.7</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.11
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>project:strongARM_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>project:strongARM_tb:1_spectre_state1_Interactive.11</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>strongARM_tb</value>
-							</option>
-							<option>lib
-								<value>project</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>spectre_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vdd
-						<value>{Inclusion List}0.63, 0.7, 0.77{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vg
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">project:strongARM_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.11</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<distributeoptions></distributeoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>May 5 01:01:55 2021</timestamp>
-			<resultsname>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/eda-3.EECS.Berkeley.EDU_ee241-aai_010155514</localpsfdir>
-			<psfdir>/home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb/adexl/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/project/strongARM_tb/adexl/results/data/Interactive.11</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<runlog>/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
 			<schematicpoint>
 				<vars>
 					<var>vdd

@@ -1,0 +1,66 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov/fifo_test.vpd.vpd -design V1} {gui_open_db -file /scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov/fifo_test.vpd -design V1} {gui_open_db -file /scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov/fifo_test.vpd.vpd -design V2} {gui_open_db -file /scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov/fifo_test.vpd -design V2} {gui_open_db -file /scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov/mc_test.vpd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1540
+gui_set_state_value -category Layout -key child_console_size_y -value 178
+gui_set_state_value -category Layout -key child_data_coltype -value 116
+gui_set_state_value -category Layout -key child_data_colvalue -value 144
+gui_set_state_value -category Layout -key child_data_colvariable -value 346
+gui_set_state_value -category Layout -key child_data_size_x -value 616
+gui_set_state_value -category Layout -key child_data_size_y -value 414
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 195
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 131
+gui_set_state_value -category Layout -key child_hier_size_x -value 335
+gui_set_state_value -category Layout -key child_hier_size_y -value 414
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-32}
+gui_set_state_value -category Layout -key child_source_size_x -value 592
+gui_set_state_value -category Layout -key child_source_size_y -value 412
+gui_set_state_value -category Layout -key child_wave_colname -value 330
+gui_set_state_value -category Layout -key child_wave_colvalue -value 96
+gui_set_state_value -category Layout -key child_wave_left -value 430
+gui_set_state_value -category Layout -key child_wave_right -value 413
+gui_set_state_value -category Layout -key main_pos_x -value 120
+gui_set_state_value -category Layout -key main_pos_y -value 233
+gui_set_state_value -category Layout -key main_size_x -value 1660
+gui_set_state_value -category Layout -key main_size_y -value 997
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-32}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 853
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 504
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 760
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 350
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1608
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1105
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file /scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov/fifo_test.vpd -design V1
+gui_list_select -id Hier.1 -current_item_name mc_tester -current_item_type Scope  -selected  { mc_tester   }
+gui_list_expand -id  Hier.1   mc_tester
+gui_list_select -id Hier.1 -current_item_name mc_tester.dut -current_item_type Scope  -selected  { mc_tester.dut   }
+gui_list_select -id Data.1 -selected  { mc_tester.dut.out_valid_reg   }
+gui_list_select -id Data.1 -selected  { {mc_tester.dut.num_valid[2:0]}   }
+gui_list_select -id Data.1 -selected  { {mc_tester.dut.num_valid[2:0]}  {mc_tester.dut.counter_up[4:0]}   }
+gui_list_select -id Data.1 -selected  { {mc_tester.dut.num_valid[2:0]}  {mc_tester.dut.counter_up[4:0]}  {mc_tester.dut.counter_wire[4:0]}   }
+gui_list_select -id Data.1 -selected  { {mc_tester.dut.num_valid[2:0]}  {mc_tester.dut.counter_up[4:0]}  {mc_tester.dut.counter_wire[4:0]}  {mc_tester.dut.counter[4:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {mc_tester.dut.counter[4:0]} {mc_tester.dut.counter_wire[4:0]} {mc_tester.dut.counter_up[4:0]} {mc_tester.dut.num_valid[2:0]} } -insertionbar
+gui_marker_move -id  Wave.1 C1 47
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 36031
+gui_marker_move -id  Wave.1 C1 62080
+gui_marker_move -id  Wave.1 C1 84385
+gui_marker_move -id  Wave.1 C1 49133
+gui_close_window -window TopLevel.2

@@ -1,0 +1,105 @@
+$date
+	Tue May  4 12:52:17 2021
+$end
+
+$version
+	Synopsys VCS version P-2019.06
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 17a8035aee561473 $end
+
+
+$scope module mc_tester $end
+
+$scope module dut $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 1 # bit_in $end
+$var wire 4 $ lane [3:0] $end
+$var wire 1 # bit_out $end
+$var reg 4 % state [3:0] $end
+$var reg 4 & next_state [3:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+bxxxx &
+bxxxx %
+0!
+0"
+x#
+bxxxx $
+$end
+#10000
+1!
+1"
+b0000 %
+b0000 $
+b0000 &
+b000x &
+#20000
+0!
+#30000
+1!
+0"
+b000x %
+b000x $
+b00xx &
+#40000
+0!
+#50000
+1!
+0#
+b00x0 &
+b00xx %
+b00xx $
+b0xx0 &
+#60000
+0!
+#70000
+1!
+b0xx0 %
+b0xx0 $
+bxx00 &
+#80000
+0!
+#90000
+1!
+1#
+bxx01 &
+bxx00 %
+bxx00 $
+bx001 &
+#100000
+0!
+#110000
+1!
+bx001 %
+bx001 $
+b0011 &
+#120000
+0!
+#130000
+1!
+0#
+b0010 &
+b0011 %
+b0011 $
+b0110 &
+#140000
+0!
+#150000
+1!
+1#
+b0111 &
+b0110 %
+b0110 $
+b1101 &

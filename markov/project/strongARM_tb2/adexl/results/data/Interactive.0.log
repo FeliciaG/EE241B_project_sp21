@@ -1,0 +1,15 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed May  5 15:31:03 2021 
+Best design point: 1
+Design specs: 
+	project:strongARM_tb2:1	corner	Nominal - 
+Design parameters: 
+	fclk		250K
+	vdd		500m
+
+Interactive.0
+Number of points completed: 2
+Number of simulation errors: 2
+Interactive.0 completed. 
+Current time: Wed May  5 15:31:14 2021 

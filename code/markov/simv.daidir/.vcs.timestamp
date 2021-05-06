@@ -1,0 +1,101 @@
+0 
+20
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -fPIC -O -I/share/instsww/synopsys/I-2014.03-SP1/vcs//include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags= -m32 -m32
+-Mobjects= /share/instsww/synopsys/I-2014.03-SP1/vcs//linux/lib/libvirsim.so /share/instsww/synopsys/I-2014.03-SP1/vcs//linux/lib/librterrorinf.so /share/instsww/synopsys/I-2014.03-SP1/vcs//linux/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/share/instsww/synopsys/I-2014.03-SP1/vcs//linux/lib/vcs_save_restore_new.o
+-Msyslibs=/share/instsww/synopsys/I-2014.03-SP1/vcs//linux/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-gen_obj
+-picarchive
+/share/instsww/synopsys/I-2014.03-SP1/vcs//linux/bin/vcs1
+ivn.v
+markov.v
+trng_test.v
+67
+sysc_uni_pwd=/scratch/ee241-aai/chipyard/EE241B_project_sp21/code/markov
+XSESSION_EXEC=mate-session
+XILINXD_LICENSE_FILE=2100@license-srv.eecs.berkeley.edu
+XDG_SESSION_ID=4199
+XDG_RUNTIME_DIR=/run/user/50529
+XDG_DATA_DIRS=/home/cc/ee241/sp21/class/ee241-aai/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=MATE
+XAUTHORITY=/home/cc/ee241/sp21/class/ee241-aai/.Xauthority
+X2GO_SESSION=ee241-aai-51-1619752094_stDKDE_dp32
+X2GO_AGENT_PID=16634
+VTE_VERSION=5204
+VMR_MODE_FLAG=32
+VENDOR=unknown
+VCS_HOME=/share/instsww/synopsys/I-2014.03-SP1/vcs//
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+UNAME=/bin/uname
+TOOL_HOME=/share/instsww/synopsys/I-2014.03-SP1/vcs//linux
+STBITS=64
+STARTUP=/usr/bin/env LD_LIBRARY_PATH=/usr/sww/lib mate-session
+SSH_CONNECTION=136.152.31.44 62298 128.32.134.201 22
+SSH_CLIENT=136.152.31.44 62298 22
+SSH_AUTH_SOCK=/run/user/50529/keyring/ssh
+SSH_AGENT_PID=17975
+SNPSLMD_LICENSE_FILE=27005@license-srv.eecs.berkeley.edu:/share/instsww/synopsys/I-2014.03-SP1/vcs///flexlm//license.dat
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/17782,unix/unix:/tmp/.ICE-unix/17782
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RUNAS=/share/b/runas/x86_64
+QT_GRAPHICSSYSTEM_CHECKED=1
+QT_GRAPHICSSYSTEM=native
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PULSE_CLIENTCONFIG=/home/cc/ee241/sp21/class/ee241-aai/.x2go/C-ee241-aai-51-1619752094_stDKDE_dp32/.pulse-client.conf
+OVA_UUM=0
+OSTYPE=linux
+OS=Linux
+NNTPSERVER=news.Berkeley.EDU
+MGLS_LICENSE_FILE=1717@license-srv.eecs.berkeley.edu
+MATE_DESKTOP_SESSION_ID=this-is-deprecated
+LIBGL_ALWAYS_INDIRECT=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+INSTMANPATH=/usr/local/man:/usr/sww/man:/usr/man:/usr/share/man:/usr/java/man:/share/b/grading/man:/home/aa/projects/scheme/lib/man
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+GUESTFISH_RESTORE=\e[0m
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+GUESTFISH_OUTPUT=\e[0m
+GUESTFISH_INIT=\e[1;34m
+GTK_OVERLAY_SCROLLING=0
+GROUP=ee241
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-EGD7Dc5VNY,guid=64ec7367749dbb4f56d00d74608b74af
+CVS_RSH=ssh
+COLORTERM=truecolor
+CDS_LIC_FILE=5280@bisc.EECS.Berkeley.EDU
+ARCH=x86_64
+AGILEESOFD_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
+0
+3
+1620192680 trng_test.v
+1620153124 ivn.v
+1620192819 markov.v
+4
+0 
+1409197423 /share/instsww/synopsys/I-2014.03-SP1/vcs//linux/lib/libvirsim.so
+1409197112 /share/instsww/synopsys/I-2014.03-SP1/vcs//linux/lib/librterrorinf.so
+1409197067 /share/instsww/synopsys/I-2014.03-SP1/vcs//linux/lib/libsnpsmalloc.so
+1620193000 simv.daidir

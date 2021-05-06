@@ -30,7 +30,7 @@ module trng_tester();
         $dumpfile("trng_test1.vcd");
         $dumpvars(0, dut);
         
-		data_file = $fopen("out_10ms700mv.txt", "r");
+		data_file = $fopen("out_10ms770mv.txt", "r");
 		if (data_file == `NULL) begin
 			$display("data_file handle was NULL");
 			$finish;

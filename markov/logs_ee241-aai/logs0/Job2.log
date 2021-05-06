@@ -1,0 +1,913 @@
+\# Program start time:     UTC 2021.05.05 22:29:34.255
+\# Local time: PDT (UTC-07:00) 2021.05.05 15:29:34.255
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 12/16/2018 07:36 (sjfhw317) $
+\o Hierarchy:		/share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.500.23  (64-bit addresses)
+\# Command line:	/share/instsww/cadence/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso10653 -mpshost eda-3.EECS.Berkeley.EDU -davinciService DaVinciService_10653_1620253087 -log /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/logs_ee241-aai/logs0/Job2.log -licenseLockFileName /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/.tmp_ee241-aai/.eda-3.EECS.Berkeley.EDU_10653 -nograph -nostdin -axlChildIdFlag 2
+\# Host name (type):	eda-3.EECS.Berkeley.EDU (x86_64)
+\# Operating system:	Linux 3.10.0-1160.24.1.el7.x86_64 #1 SMP Thu Apr 8 19:51:47 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 14575)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        486 MB
+\# Available memory:	     81,705 MB
+\# System memory:	     97,442 MB
+\# Maximum memory size:	     97,031 MB
+\# Max mem available:	     81,780 MB
+\# Initial memory used:	         75 MB
+\#        process size:	      1,067 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 16.00/16.00
+\# Qt version:		4.8.5
+\# Window Manager:	other
+\# User Name:		ee241-aai
+\o Working Directory:	eda-3.EECS.Berkeley.EDU:/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov
+\# Process Id:		14663
+\o 
+\o COPYRIGHT (C) 1992-2018  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2018  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\# Memory report: using         179 MB, process size 1,288 MB at UTC 2021.05.05 22:29:36.159
+\o *Info*    Exporting services from client ... 
+\o 
+\o *INFO* (icLic-303) virtuoso: PID=14663, Child Mode is true, ICPR Mode is true, Registration Timeout is 180 seconds, Communication Timeout is 180 seconds.
+\o //
+\o //  Calibre Skill Interface * (v2017.4_35.25) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o loading vars from /home/ff/ee241/spring20-labs/asap7PDK_r1p5/cdslib/setup/cdsenv for tool layout
+\o --------------------------------------------------------------------------------
+\o    ###     ######     ###    ########  ########    ########  ########  ##    ## 
+\o   ## ##   ##    ##   ## ##   ##     ## ##    ##    ##     ## ##     ## ##   ##  
+\o  ##   ##  ##        ##   ##  ##     ##     ##      ##     ## ##     ## ##  ##   
+\o ##     ##  ######  ##     ## ########     ##       ########  ##     ## #####    
+\o #########       ## ######### ##          ##        ##        ##     ## ##  ##   
+\o ##     ## ##    ## ##     ## ##          ##        ##        ##     ## ##   ##  
+\o ##     ##  ######  ##     ## ##          ##        ##        ########  ##    ## 
+\o --------------------------------------------------------------------------------
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\o Loading pe.cxt 
+\a _treeSetOpcGUI(t)
+\r t
+\# Available memory:         81,594 MB at UTC 2021.05.05 22:29:44.925
+\# Memory report: Maximum memory size now 81,798 MB at UTC 2021.05.05 22:29:44.926
+\# Thread usage report: 17 active threads, active load 1.00 at UTC 2021.05.05 22:29:44.926
+\o Loading vqp.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = project
+\o 	Cell         = strongARM_tb2
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = project:strongARM_tb2:1_none_Interactive.0
+\o 	Results DB   = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb2/adexl/results/data/Interactive.0.rdb
+\o 	Results Dir  = /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/1/project:strongARM_tb2:1
+\o 	Results Loc  = /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data
+\o 	Project Dir  = /home/cc/ee241/sp21/class/ee241-aai/simulation
+\o 	Setup DB loc = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o *INFO* (icLic-304) Start to connect to parent process (session=virtuoso10653, host=eda-3.EECS.Berkeley.EDU). Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o *INFO* (icLic-305) Step 1: Connecting to parent. Spent time is 0 seconds.
+\o *INFO* (icLic-309) The registration of the child 14663 within 90 seconds is being processed ...
+\o *INFO* (icLic-310) The result of registration is true. Spend time is 1 seconds.
+\o *INFO* (icLic-308) The end of connection. Result is true. Total spent time is 1 seconds.
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\# Memory report: using         281 MB, process size 1,394 MB at UTC 2021.05.05 22:31:06.029
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 1) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var fclk = "250K"
+\o Setting temp(T) = 27
+\o Setting var vdd = "500m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/1/project:strongARM_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/1/project:strongARM_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Initializing the control file using cp:
+\o     cp /share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/etc/si/control.spectre /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/1/project:strongARM_tb2:1/netlist/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Begin Incremental Netlisting May  5 15:31:06 2021
+\o End netlisting May  5 15:31:07 2021
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   16
+\o 
+\o 	Elapsed time:          1.0s (16.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ project:strongARM_tb2:1 ]
+\o           for Point ID (0 1).
+\o 
+\o Delete psf data in /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/1/project:strongARM_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre in `strongARM_alib', during circuit
+\o           read-in.
+\o Error found by spectre in `strongARM_alib', during
+\o           circuit read-in.
+\o ERROR (SFE-23): "input.scs" 14: The
+\o           instance `M10' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the
+\o  definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 15: The
+\o           instance `M9' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 16: The
+\o           instance `M8' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 17: The
+\o           instance `M7' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 18: The
+\o           instance `M6' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 19: The
+\o           instance `M5' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 20: The
+\o           instance `M4' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 21: The
+\o           instance `M3' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 22: The
+\o           instance `M2' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 23: The
+\o           instance `M1' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 24: The
+\o           instance `M0' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 1) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var fclk = "250K"
+\o Setting temp(T) = 27
+\o Setting var vdd = "500m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/1/project:strongARM_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/1/project:strongARM_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting May  5 15:31:09 2021
+\o End netlisting May  5 15:31:09 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ project:strongARM_tb2:1 ]
+\o           for Point ID (0 1).
+\o 
+\o Delete psf data in /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/1/project:strongARM_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre in `strongARM_alib', during circuit
+\o           read-in.
+\o Error found by spectre in `strongARM_alib', during
+\o           circuit read-in.
+\o ERROR (SFE-23): "input.scs" 14: The
+\o           instance `M10' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the
+\o  definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 15: The
+\o           instance `M9' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 16: The
+\o           instance `M8' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 17: The
+\o           instance `M7' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 18: The
+\o           instance `M6' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 19: The
+\o           instance `M5' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 20: The
+\o           instance `M4' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 21: The
+\o           instance `M3' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 22: The
+\o           instance `M2' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 23: The
+\o           instance `M1' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 24: The
+\o           instance `M0' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 2) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var fclk = "250K"
+\o Setting temp(T) = 27
+\o Setting var vdd = "900m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/2/project:strongARM_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/2/project:strongARM_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting May  5 15:31:11 2021
+\o End netlisting May  5 15:31:11 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ project:strongARM_tb2:1 ]
+\o           for Point ID (0 2).
+\o 
+\o Delete psf data in /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/2/project:strongARM_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre in `strongARM_alib', during circuit
+\o           read-in.
+\o Error found by spectre in `strongARM_alib', during
+\o           circuit read-in.
+\o ERROR (SFE-23): "input.scs" 14: The
+\o           instance `M10' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the
+\o  definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 15: The
+\o           instance `M9' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 16: The
+\o           instance `M8' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 17: The
+\o           instance `M7' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 18: The
+\o           instance `M6' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 19: The
+\o           instance `M5' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 20: The
+\o           instance `M4' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 21: The
+\o           instance `M3' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 22: The
+\o           instance `M2' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 23: The
+\o           instance `M1' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 24: The
+\o           instance `M0' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 2) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var fclk = "250K"
+\o Setting temp(T) = 27
+\o Setting var vdd = "900m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/2/project:strongARM_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/2/project:strongARM_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting May  5 15:31:12 2021
+\o End netlisting May  5 15:31:12 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ project:strongARM_tb2:1 ]
+\o           for Point ID (0 2).
+\o 
+\o Delete psf data in /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.0/2/project:strongARM_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre in `strongARM_alib', during circuit
+\o           read-in.
+\o Error found by spectre in `strongARM_alib', during
+\o           circuit read-in.
+\o ERROR (SFE-23): "input.scs" 14: The
+\o           instance `M10' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the
+\o  definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 15: The
+\o           instance `M9' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 16: The
+\o           instance `M8' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 17: The
+\o           instance `M7' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 18: The
+\o           instance `M6' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 19: The
+\o           instance `M5' is referencing an undefined model or
+\o           subcircuit, `pmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `pmos_rvt', or define `pmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 20: The
+\o           instance `M4' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 21: The
+\o           instance `M3' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 22: The
+\o           instance `M2' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 23: The
+\o           instance `M1' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o ERROR (SFE-23): "input.scs" 24: The
+\o           instance `M0' is referencing an undefined model or
+\o           subcircuit, `nmos_rvt'. Either include the file containing
+\o           the 
+\o definition of `nmos_rvt', or define `nmos_rvt' before
+\o           running the simulation.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables3".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = project
+\o 	Cell         = strongARM_tb2
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = project:strongARM_tb2:1_none_Interactive.1
+\o 	Results DB   = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb2/adexl/results/data/Interactive.1.rdb
+\o 	Results Dir  = /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.1/1/project:strongARM_tb2:1
+\o 	Results Loc  = /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data
+\o 	Project Dir  = /home/cc/ee241/sp21/class/ee241-aai/simulation
+\o 	Setup DB loc = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var fclk = "250K"
+\o Setting temp(T) = 27
+\o Setting var vdd = "500m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.1/1/project:strongARM_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.1/1/project:strongARM_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting May  5 15:32:15 2021
+\o End netlisting May  5 15:32:15 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ project:strongARM_tb2:1 ]
+\o           for Point ID (1 1).
+\o 
+\o Delete psf data in /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.1/1/project:strongARM_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
+\o 
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 1) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables3".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = project
+\o 	Cell         = strongARM_tb2
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = project:strongARM_tb2:1_none_Interactive.2
+\o 	Results DB   = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb2/adexl/results/data/Interactive.2.rdb
+\o 	Results Dir  = /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.2/1/project:strongARM_tb2:1
+\o 	Results Loc  = /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data
+\o 	Project Dir  = /home/cc/ee241/sp21/class/ee241-aai/simulation
+\o 	Setup DB loc = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 1) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var fclk = "250K"
+\o Setting temp(T) = 27
+\o Setting var vdd = "500m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.2/1/project:strongARM_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.2/1/project:strongARM_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting May  5 15:36:05 2021
+\o End netlisting May  5 15:36:05 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ project:strongARM_tb2:1 ]
+\o           for Point ID (2 1).
+\o 
+\o Delete psf data in /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.2/1/project:strongARM_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 1) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 2) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vdd = "900m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.2/2/project:strongARM_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.2/2/project:strongARM_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting May  5 15:36:08 2021
+\o End netlisting May  5 15:36:08 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ project:strongARM_tb2:1 ]
+\o           for Point ID (2 2).
+\o 
+\o Delete psf data in /home/cc/ee241/sp21/class/ee241-aai/simulation/project/strongARM_tb2/adexl/results/data/Interactive.2/2/project:strongARM_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 2) on testbench [
+\o           project:strongARM_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables3".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit            308 MB, process size 1,435 MB at UTC 2021.05.05 22:38:23.624
+\# Memory report: peak usage         308 MB, process size 1,435 MB

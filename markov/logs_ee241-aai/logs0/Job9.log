@@ -1,0 +1,242 @@
+\# Program start time:     UTC 2021.05.04 18:35:15.746
+\# Local time: PDT (UTC-07:00) 2021.05.04 11:35:15.746
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 12/16/2018 07:36 (sjfhw317) $
+\o Hierarchy:		/share/instsww/cadence/IC.06.17.823/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.500.23  (64-bit addresses)
+\# Command line:	/share/instsww/cadence/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso22085 -mpshost eda-3.EECS.Berkeley.EDU -davinciService DaVinciService_22085_1619972975 -log /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/logs_ee241-aai/logs0/Job9.log -licenseLockFileName /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/.tmp_ee241-aai/.eda-3.EECS.Berkeley.EDU_22085 -nograph -nostdin -axlChildIdFlag 9
+\# Host name (type):	eda-3.EECS.Berkeley.EDU (x86_64)
+\# Operating system:	Linux 3.10.0-1160.24.1.el7.x86_64 #1 SMP Thu Apr 8 19:51:47 UTC 2021
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 24196)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x1400000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        478 MB
+\# Available memory:	     60,045 MB
+\# System memory:	     97,442 MB
+\# Maximum memory size:	     97,040 MB
+\# Max mem available:	     60,119 MB
+\# Initial memory used:	         75 MB
+\#        process size:	      1,067 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 16.00/16.00
+\# Qt version:		4.8.5
+\# Window Manager:	other
+\# User Name:		ee241-aai
+\o Working Directory:	eda-3.EECS.Berkeley.EDU:/scratch/ee241-aai/chipyard/EE241B_project_sp21/markov
+\# Process Id:		24629
+\o 
+\o COPYRIGHT (C) 1992-2018  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2018  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o *INFO* (icLic-303) virtuoso: PID=24629, Child Mode is true, ICPR Mode is true, Registration Timeout is 180 seconds, Communication Timeout is 180 seconds.
+\# Memory report: using         198 MB, process size 1,312 MB at UTC 2021.05.04 18:35:18.160
+\o //
+\o //  Calibre Skill Interface * (v2017.4_35.25) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o loading vars from /home/ff/ee241/spring20-labs/asap7PDK_r1p5/cdslib/setup/cdsenv for tool layout
+\o --------------------------------------------------------------------------------
+\o    ###     ######     ###    ########  ########    ########  ########  ##    ## 
+\o   ## ##   ##    ##   ## ##   ##     ## ##    ##    ##     ## ##     ## ##   ##  
+\o  ##   ##  ##        ##   ##  ##     ##     ##      ##     ## ##     ## ##  ##   
+\o ##     ##  ######  ##     ## ########     ##       ########  ##     ## #####    
+\o #########       ## ######### ##          ##        ##        ##     ## ##  ##   
+\o ##     ## ##    ## ##     ## ##          ##        ##        ##     ## ##   ##  
+\o ##     ##  ######  ##     ## ##          ##        ##        ########  ##    ## 
+\o --------------------------------------------------------------------------------
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\o Loading pe.cxt 
+\a _treeSetOpcGUI(t)
+\r t
+\o Loading vqp.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = project
+\o 	Cell         = strongARM_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = project:strongARM_tb:1_spectre_state1_Interactive.9
+\o 	Results DB   = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9.rdb
+\o 	Results Dir  = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9/1/project:strongARM_tb:1
+\o 	Results Loc  = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data
+\o 	Project Dir  = /home/cc/ee241/sp21/class/ee241-aai/simulation
+\o 	Setup DB loc = /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o *INFO* (icLic-304) Start to connect to parent process (session=virtuoso22085, host=eda-3.EECS.Berkeley.EDU). Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o *INFO* (icLic-305) Step 1: Connecting to parent. Spent time is 0 seconds.
+\o *INFO* (icLic-309) The registration of the child 24629 within 90 seconds is being processed ...
+\o *INFO* (icLic-310) The result of registration is true. Spend time is 0 seconds.
+\o *INFO* (icLic-308) The end of connection. Result is true. Total spent time is 0 seconds.
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o WARNING (ADE-7002): The Spectre run mode needs to be 'batch' when Spectre high-performance mode is enabled. Automatically
+\o             setting the run mode to 'batch'.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 2) on testbench [
+\o           project:strongARM_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting temp(T) = 27
+\o Setting var vdd = "0.7"
+\o Setting var vg = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9/2/project:strongARM_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9/2/project:strongARM_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 2)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Begin Incremental Netlisting May  4 11:35:21 2021
+\o End netlisting May  4 11:35:21 2021
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ project:strongARM_tb:1 ]
+\o           for Point ID (2 2).
+\o 
+\o Delete psf data in /scratch/ee241-aai/chipyard/EE241B_project_sp21/markov/project/strongARM_tb/adexl/results/data/Interactive.9/2/project:strongARM_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Memory report: using         302 MB, process size 1,430 MB at UTC 2021.05.04 18:35:23.723
+\# Available memory:         59,384 MB at UTC 2021.05.04 18:35:26.103
+\# Memory report: Maximum memory size now 59,687 MB at UTC 2021.05.04 18:35:26.103
+\# Thread usage report: 17 active threads, active load 1.00 at UTC 2021.05.04 18:35:26.104
+\# Memory report: Maximum memory size now 61,038 MB at UTC 2021.05.04 22:13:18.943
+\# Memory report: Maximum memory size now 62,784 MB at UTC 2021.05.04 22:53:11.916
+\# Memory report: Maximum memory size now 64,019 MB at UTC 2021.05.05 00:56:47.327
+\# Memory report: Maximum memory size now 62,189 MB at UTC 2021.05.05 05:09:51.410
+\# Memory report: Maximum memory size now 60,679 MB at UTC 2021.05.05 05:10:01.412
+\# Memory report: Maximum memory size now 59,320 MB at UTC 2021.05.05 05:10:11.412
+\# Available memory:         65,018 MB at UTC 2021.05.05 05:11:21.417
+\# Memory report: Maximum memory size now 65,325 MB at UTC 2021.05.05 05:11:21.417
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
+\o 
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Available memory:         41,659 MB at UTC 2021.05.05 06:16:32.178
+\# Memory report: Maximum memory size now 49,555 MB at UTC 2021.05.05 06:16:32.359
+\# Memory report: using       7,896 MB, process size 9,023 MB at UTC 2021.05.05 06:16:32.359
+\# Available memory:         12,642 MB at UTC 2021.05.05 06:46:55.419
+\# Memory report: Maximum memory size now 28,125 MB at UTC 2021.05.05 06:46:58.726
+\# Memory report: using      15,482 MB, process size 16,610 MB at UTC 2021.05.05 06:47:00.353
+\# Available memory:         11,309 MB at UTC 2021.05.05 06:48:52.587
+\# Memory report: Maximum memory size now 26,793 MB at UTC 2021.05.05 06:48:52.667
+\# Available memory:         19,402 MB at UTC 2021.05.05 07:07:49.870
+\# Memory report: Maximum memory size now 42,490 MB at UTC 2021.05.05 07:07:49.951
+\# Memory report: using      23,089 MB, process size 24,216 MB at UTC 2021.05.05 07:07:49.951
+\# Available memory:         42,614 MB at UTC 2021.05.05 11:14:04.061
+\# Memory report: Maximum memory size now 65,702 MB at UTC 2021.05.05 11:14:04.130
+\o 
+\o *Info*    Run complete for Point ID (2 2) on testbench [
+\o           project:strongARM_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         61,148 MB at UTC 2021.05.05 11:17:59.330
+\# Memory report: Maximum memory size now 61,478 MB at UTC 2021.05.05 11:17:59.330
+\o MPS exit handler called.
+\e *Error* MPS exit handler called, indicating that the TCP/IP connection to the GUI has been lost.  Exiting
+\e 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables3".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit            330 MB, process size 1,457 MB at UTC 2021.05.05 11:18:08.487
+\# Memory report: peak usage      23,089 MB, process size 24,216 MB
